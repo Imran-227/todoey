@@ -5,12 +5,15 @@ class TaskTile extends StatelessWidget {
   final bool isChecked;
   final String taskName;
   final Function checkBoxToggle;
+  final Function deleteTask;
 
-  const TaskTile(
-      {super.key,
-      required this.taskName,
-      required this.isChecked,
-      required this.checkBoxToggle});
+  const TaskTile({
+    super.key,
+    required this.taskName,
+    required this.isChecked,
+    required this.checkBoxToggle,
+    required this.deleteTask,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +27,12 @@ class TaskTile extends StatelessWidget {
         activeColor: kAppColor,
         value: isChecked,
         onChanged: (newValue) {
-          checkBoxToggle;
+          checkBoxToggle();
         },
       ),
+      onLongPress: () {
+        deleteTask();
+      },
     );
   }
 }

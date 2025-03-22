@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
             Expanded(
               child: Container(
                   padding: const EdgeInsets.symmetric(
-                      horizontal: 20.0, vertical: 20.0),
+                      horizontal: 7.0, vertical: 20.0),
                   decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(

@@ -2,22 +2,28 @@ import 'package:flutter/foundation.dart';
 import 'package:todoey/models/task.dart';
 
 class Data extends ChangeNotifier {
-  List<Task> tasks = [
-    Task(name: "Get meat"),
-    Task(name: "Buy milk"),
-  ];
+  final List<Task> _tasks = [];
 
   int get itemCount {
-    return tasks.length;
+    return _tasks.length;
   }
 
-  void appendTask(Task t) {
-    tasks.add(t);
+  List<Task> get tasks {
+    return _tasks;
+  }
+
+  void appendTask(Task newTask) {
+    _tasks.add(newTask);
     notifyListeners();
   }
 
-  void taskToggle(index) {
-    tasks[index].toggleDone();
+  void removeTask(Task task) {
+    _tasks.remove(task);
+    notifyListeners();
+  }
+
+  void taskToggle(Task toggledTask) {
+    toggledTask.toggleDone();
     notifyListeners();
   }
 }

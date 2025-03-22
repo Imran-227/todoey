@@ -13,7 +13,7 @@ class AddTask extends StatefulWidget {
 }
 
 class _AddTaskState extends State<AddTask> {
-  String taskName = "null";
+  String taskName = "Empty task";
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +41,9 @@ class _AddTaskState extends State<AddTask> {
           ),
           FilledButton(
               onPressed: () {
-                Provider.of<Data>(context).appendTask(Task(name: taskName));
+                Provider.of<Data>(context, listen: false)
+                    .appendTask(Task(name: taskName));
+
                 Navigator.pop(context);
               },
               style: const ButtonStyle(
