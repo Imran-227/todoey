@@ -133,9 +133,8 @@ SOFTWARE.
 
 ---
 
-### **Badge for Build Status (Optional)**
+### **Build Status**
 
-You can add badges to show the build status of your project:
-
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/Imran-227/todoey)
+[![Build Status](https://img.shields.io/badge/status-complete-brightgreen)](https://github.com/Imran-227/todoey)
+[![Licenced](https://img.shields.io/badge/license-MIT-blue)]
 
