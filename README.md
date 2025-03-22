@@ -134,6 +134,5 @@ SOFTWARE.
 ---
 
 ### **Build Status**
-
-[![Build Status](https://img.shields.io/badge/status-complete-brightgreen)](https://github.com/Imran-227/todoey) [![Licenced](https://img.shields.io/badge/license-MIT-blue)]
+[![Build Status](https://img.shields.io/badge/status-complete-brightgreen)](https://github.com/Imran-227/todoey) ![Licenced](https://img.shields.io/badge/license-MIT-blue)
 
